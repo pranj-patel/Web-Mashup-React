@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* body {
+  background-image: url("./images/nepal-1309205_1920.jpg");
+  background-repeat: no-repeat;
+  backface-visibility: 2px;
+  background-size: cover;
+} */
+
+.Container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  /* z-index: 90; */
+  padding: 30px 20px;
+}
+
+/* navbar logo  */
+
+.navbar-logo a {
+  font-size: 1.7rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* navbar search box */
+.navbar-search {
+  position: relative;
+}
+
+/* search - input */
+
+.navbar-mid {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-search input {
+  position: relative;
+  padding: 8px;
+  margin-right: 3px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+/*  */
+button {
+  padding: 7px 10px;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar-links2 {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links2 li {
+  margin-right: 10px;
+}
+
+.navbar-links2 a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links2 a:hover {
+  color: #f39c12;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links li {
+  margin-right: 10px;
+}
+
+.navbar-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #f39c12;
+}
+
+.logo {
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.searchBox {
+  border: 1px solid black;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+.searchInput {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.searchButton {
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.suggest {
+  position: absolute;
+  outline: none;
+  top: 30px;
+  border: none;
+}
+.select {
+  outline: none;
+}
+
+.main {
+  /* background-image: url("./images/mountains-3523153_1920.jpg");
+  /* opacity: 0.5; */
+  /* background-repeat: no-repeat;
+  backface-visibility: 2px;
+  background-size: cover;  */
+  background-color: #faf7f794;
+}
+
+.home-page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.place-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  text-align: center;
+  margin: 30px 0px;
+}
+.place-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.place-box {
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.place-name {
+  text-decoration: none;
+  color: black;
+}
+.place-img-box {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+.placeImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: rgb(111, 134, 211) 3px 3px 5px;
+}
+
+.restaurant-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0px 10px;
+  text-align: center;
+}
+
+.place-details {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.heading2 {
+  text-align: center;
+  font-size: 28px;
+}
+.description {
+  text-align: center;
+  font-size: 20px;
+  /* display: flex; */
+  width: 60%;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* HomePage.css */
+.landing-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column; /* Changed to column to stack content vertically */
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("./images/double-decker-3283422_1920.jpg");
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
+.landing-content {
+  text-align: center;
+  z-index: 2;
+  margin-top: -13%; /* Move the content up by 10% */
+}
+
+.landing-content h1 {
+  font-size: 80px; /* Increased font size */
+  color: white; /* Changed to white */
+  margin-bottom: 30px; /* Adjusted margin */
+  margin-top: -190px; /* Move the title up */
+}
+
+.landing-content h3 {
+  font-size: 20px;
+  color: white; /* Changed to white */
+  margin-top: 10px; /* Move the title up */
+}
+
+.landing-content button {
+  padding: 10px 20px;
+  margin-top: 20px; 
+  text-decoration: none;
+  background-color: #1a0328;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+.landing-content button:hover {
+  background-color: #3b0946; /* Changed hover color */
+  transform: scale(1.1); /* Added scale effect on hover */
+}
+
+.app-description {
+  color: white; /* Text color */
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  width: 80%; /* Adjust width as needed */
+  margin-top: 20px; /* Space between content */
+  border-radius: 10px; /* Rounded corners */
+  position: fixed; /* Fix position */
+  bottom: 0; /* Align to bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for horizontal centering */
+}
+
+.app-description h3 {
+  font-size: 30px; /* Increased font size */
+  margin-bottom: 15px;
+}
+
+.app-description p {
+  font-size: 18px; /* Adjusted font size for better readability */
+  margin-bottom: 10px;
+}
+
+
+
+.ytVideo {
+  border-radius: 20px;
+  width: 550px;
+  height: 300px;
+}
+
+.loader {
+  position: absolute;
+
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  gap: 10px;
+}
+
+.earth {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background: url("./images/earth1.jpg");
+  background-position: center;
+  box-shadow: 5px 5px 10px black;
+  /* background-repeat: no-repeat; */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+  animation: earthAnimate infinite 20s linear;
+}
+
+@keyframes earthAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 512px 0px;
+  }
+}
+
+.b {
+  font-size: 100px;
+  animation: b 1s infinite;
+}
+@keyframes b {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.v {
+  font-size: 100px;
+  animation: v 1s infinite;
+}
+@keyframes v {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .navbar-mid {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 90px;
+    left: 0;
+    background: white;
+    width: 100vw;
+    padding: 10px;
+    border-bottom: #1a0328 1px solid;
+  }
+  .navbar-links {
+    width: 100vw;
+    padding: 0;
+    color: #1a0328;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-links a {
+    color: #1a0328;
+  }
+  .navbar-search {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* left: 0px; */
+  }
+  .description {
+    width: 90%;
+  }
+  .ytVideo {
+    width: 90vw;
+  }
+  .name {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .v,
+  .b {
+    font-size: 50px;
+  }
+}
+
+/* c8f30047470149c1895f5be68475f667 */
+/* https://api.geoapify.com/v2/places?categories=natural&filter=circle:78.035890,27.167720,5000&limit=20&apiKey=f832ea9a2d424cd9923f2219524c48b3 */
+/* https://api.geoapify.com/v1/geocode/search?text=agra%20uttarPradesh&format=json&apiKey=c8f30047470149c1895f5be68475f667 */
